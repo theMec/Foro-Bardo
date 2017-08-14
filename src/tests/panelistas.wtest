@@ -1,0 +1,30 @@
+import panelistas.*
+
+
+describe "Test de los Distintos Panelistas" {
+
+//Horacio Pagani
+	test "horacio eleva la voz" {
+		horacioPagani.nivelDeEnojo(10)
+		horacioPagani.elevarVoz()
+		assert.equals(20, horacioPagani.nivelDeEnojo())
+	}
+
+	test "horacio toma agua" {
+		horacioPagani.nivelDeEnojo(10)
+		horacioPagani.tomarAgua()
+		assert.equals(9.0, horacioPagani.nivelDeEnojo())
+	}
+
+	test "horacio intenta calmarse" {
+		horacioPagani.nivelDeEnojo(10)
+		horacioPagani.calmarse(1)
+		assert.equals(0, horacioPagani.nivelDeEnojo())
+	}
+
+	test "horacio esta caliente" {
+		horacioPagani.nivelDeEnojo(21)
+		assert.that(horacioPagani.estaCaliente())
+	}
+
+}
