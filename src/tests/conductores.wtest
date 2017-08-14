@@ -10,7 +10,7 @@ describe "Test de los Distintos conductores" {
 		assert.notThat(totiPasman.tieneSed())
 	}
 
-	test "polino hace opinar de chimentos a horacio pagani " {
+	test "polino hace opinar de chimentos a horacio pagani no debe estar enojado" {
 		horacioPagani.nivelDeEnojo(20)
 		polino.hacerOpinarDeChimentosA(horacioPagani)
 		assert.equals(0,horacioPagani.nivelDeEnojo())
