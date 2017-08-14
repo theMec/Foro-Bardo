@@ -1,0 +1,18 @@
+import conductores.*
+import panelistas.*
+
+
+describe "Test de los Distintos conductores" {
+
+	test "fantino hace opinar de deportes a toti Pasman y este debe no tener sed y su soberbia debe bajar a cero" {
+		fantino.hacerOpinarDeDeportesA(totiPasman)
+		assert.equals(0, totiPasman.soberbia())
+		assert.notThat(totiPasman.tieneSed())
+	}
+
+	test "polino hace opinar de chimentos a horacio pagani " {
+		horacioPagani.nivelDeEnojo(20)
+		polino.hacerOpinarDeChimentosA(horacioPagani)
+		assert.equals(0,horacioPagani.nivelDeEnojo())
+	}
+}

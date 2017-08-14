@@ -1,6 +1,10 @@
 
 object horacioPagani {
 	var nivelDeEnojo
+	
+	method nivelDeEnojo(){
+		return nivelDeEnojo
+	}
 
 	method elevarVoz() {
 		self.aumentarNivelDeEnojo(10)
@@ -36,6 +40,10 @@ object horacioPagani {
 object totiPasman {
 	var soberbia = 10
 	var tieneSed = false
+	
+	method soberbia(){
+		return soberbia
+	}
 
 	method elevarVoz() {
 		self.aumentarSoberbia(10)
@@ -56,6 +64,10 @@ object totiPasman {
 
 	method aumentarSoberbia(unaCantidad) {
 		soberbia += unaCantidad
+	}
+	
+	method tieneSed() {
+		return tieneSed
 	}
 }
 
