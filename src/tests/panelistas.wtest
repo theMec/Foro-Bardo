@@ -45,6 +45,31 @@ describe "Test de los Distintos Panelistas" {
 		assert.equals(0, totiPasman.soberbia())
 	}
 	
+//Lizzy Tagliani
+	test "Lizzy eleva la voz" {
+		lizzyTagliani.elevarVoz()
+		assert.equals(lizzyTagliani,lizzyTagliani)
+	}
+
+
+	test "Lizzy  toma agua" {
+		lizzyTagliani.tomarAgua()
+		assert.equals(20,lizzyTagliani.humor())
+	}
+	
+	test " Lizzy  se calma 2 minutos, pero no esta de mal humor" {
+		lizzyTagliani.aumentarHumor(-10)
+		lizzyTagliani.calmarse(2)
+		assert.equals(0,lizzyTagliani.humor())
+	}
+
+	test " Lizzy se pone de malhumor, se calma 20 minutos" {
+		lizzyTagliani.aumentarHumor(-20)
+		lizzyTagliani.calmarse(10)
+		assert.equals(10,lizzyTagliani.humor())
+	}
+
+	
 
 
 }

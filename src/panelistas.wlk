@@ -74,6 +74,9 @@ object totiPasman {
 object lizzyTagliani {
 	var humor = 10
 
+	method humor() {
+	return humor}
+	
 	method elevarVoz() {
 	}
 
