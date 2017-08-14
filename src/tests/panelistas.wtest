@@ -26,5 +26,26 @@ describe "Test de los Distintos Panelistas" {
 		horacioPagani.nivelDeEnojo(21)
 		assert.that(horacioPagani.estaCaliente())
 	}
+	
+	
+//Toti Pasman
+	test "toti eleva la voz" {
+		totiPasman.elevarVoz()
+		assert.equals(20, totiPasman.soberbia())
+		assert.that(totiPasman.tieneSed())
+	}
+	
+	test "toti toma agua" {
+		totiPasman.tomarAgua()	
+		assert.notThat(totiPasman.tieneSed())
+	}	
+
+	test "toti se calma" {
+		totiPasman.calmarse(5)
+		assert.equals(0, totiPasman.soberbia())
+	}
+	
+
 
 }
+
